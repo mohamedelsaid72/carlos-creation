@@ -14,7 +14,7 @@
 }
 .navbar{
     position: fixed;
-    transition: 0.8s ease-in-out; 
+    transition: 0.8s ease-in-out;
 }
 .navbar-brand{
     color: #fff !important;
@@ -290,6 +290,7 @@
 /*------------ Showreel -----------*/
 .showreel header{
     height: 80vh;
+    width: 100%;
 }
 .showreel header .container{
     top: 38%;
@@ -489,6 +490,7 @@ header {
     margin-top: 105px;
     margin-left:195px ;
 }
+
 .work .second_row .col-md-6 .text{
     text-align: right;
     width: 90%;
@@ -568,6 +570,14 @@ header {
 }
 .work .container .row .col-md-6 .progress-bar{
     background-color: #242128;
+}
+@media(max-width:600px){
+    .work .second_row .col-md-6 h1::before{
+        margin-left:125px ;
+    }
+    .work .row_padding{
+        padding: 10px !important;
+    }
 }
 /* ---process--- */
 .process .content-box .row .boldtext{
@@ -698,4 +708,23 @@ header {
 }
 .process .content-box .frameworks .fa-sass{
     font-size: 30px;
+}
+
+/* font sizes for responsive design  */
+@media (max-width: 600px){
+    h1{
+        font-size: 30px !important;
+    }
+    h2{
+        font-size: 24px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    p{
+        font-size: 14px !important;
+    }
+    a{
+        font-size: 14px !important;
+    }
 }
